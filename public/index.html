@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD Carrossel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NASA Astronomy Picture of the Day</h1>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Digite o nome de um astro (ex: Marte, Lua, Saturno...)">
+            <button id="searchButton">Buscar</button>
+        </div>
+        
+        <div id="loading" class="loading">
+            <i class="fas fa-spinner fa-spin"></i> Carregando imagens...
+        </div>
+        
+        <div id="error" class="error"></div>
+        
+        <div id="carouselContainer">
+            <div class="carousel">
+                <button class="nav-button prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-button next"><i class="fas fa-chevron-right"></i></button>
+                <!-- Slides serão inseridos aqui pelo JavaScript -->
+            </div>
+        </div>
+        
+        <div id="noResults" class="no-results">
+            Nenhuma imagem encontrada para este astro ou todas têm copyright.
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
